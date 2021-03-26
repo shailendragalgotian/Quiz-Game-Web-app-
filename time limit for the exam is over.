@@ -1,0 +1,8 @@
+else if("Finish Exam".equals(action)||( minute==0 && second==0))
+			{   finish=true;
+				int result=exam.calculateResult(exam);				
+				request.setAttribute("result",result);
+				request.getSession().setAttribute("currentExam",null);
+				request.getRequestDispatcher("/WEB-INF/jsps/result.jsp").forward(request,response);
+
+			}
