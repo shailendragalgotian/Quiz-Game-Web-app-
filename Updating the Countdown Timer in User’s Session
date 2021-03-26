@@ -1,0 +1,7 @@
+if(request.getParameter("minute")!=null)
+			{			
+			minute=Integer.parseInt(request.getParameter("minute"));
+			second=Integer.parseInt(request.getParameter("second"));
+			request.getSession().setAttribute("min",request.getParameter("minute") );
+			request.getSession().setAttribute("sec",request.getParameter("second") );
+			}
