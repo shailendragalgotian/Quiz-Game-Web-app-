@@ -1,0 +1,5 @@
+function customSubmit(someValue){  
+        	 document.questionForm.minute.value = min;   
+        	 document.questionForm.second.value = sec; 
+        	 document.questionForm.submit();  
+        	 }
